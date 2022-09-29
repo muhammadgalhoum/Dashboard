@@ -1,0 +1,178 @@
+.boxes .control .holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.boxes .control .holder .text {
+  margin: 15px 0 0;
+}
+.boxes .control .holder .text .title {
+  margin: 0;
+  font-size: 14px
+}
+.boxes .control .holder .text .desc {
+  color: #777;
+  font-size: 11px;
+  margin: 10px 0 0;
+}
+.boxes .control form {
+  border: none;
+  margin: 15px 0 0;
+}
+.boxes .control form textarea {
+  resize: none;
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  font-size: 11px;
+  border-radius: 5px;
+  border: 1px solid #7777;
+  background-color: transparent;
+}
+.boxes .info {
+  position: relative;
+}
+.boxes .info form {
+  position: relative;
+  margin: 20px 0 0;
+}
+.boxes .info form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #777;
+  width: 100%;
+}
+.boxes .info form input {
+  margin-bottom: 15px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #777;
+  padding: 3px 5px 5px;
+  background-color: transparent;
+}
+.boxes .info form input[type="email"] {
+  margin-bottom: 0;
+  width: calc(100% - 60px);
+  background-color: #f1f5f9;
+}
+.boxes .info form input[type="submit"] {
+  position: absolute;
+  right: 0;
+  bottom: 9px;
+  width: 50px;
+  padding: 0px;
+  margin: 0;
+  font-size: 13px;
+  cursor: pointer;
+  border: none;
+  color: #2196f3;
+  background: none;
+}
+.boxes .security .holder {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+.boxes .security .holder p:first-of-type {
+  font-size: 13px;
+  margin: 0;
+}
+.boxes .security .holder p:last-of-type {
+  font-size: 11px;
+  color: #777;
+  margin: 8px 0 10px;
+}
+.boxes .security .pass,
+.boxes .security .factor,
+.boxes .security .device {
+  padding: 15px 0 12px;
+}
+.boxes .security .pass a {
+  font-size: 13px;
+  color: white;
+  padding: 5px 6px;
+  border-radius: 5px;
+  background-color: #2196f3;
+}
+.boxes .security .device {
+  border: none;
+}
+.boxes .security .device a {
+  font-size: 13px;
+  color: white;
+  padding: 5px 6px;
+  border-radius: 5px;
+  background-color: #ccc;
+}
+.boxes .social .holder {
+  margin: 20px 0 0;
+}
+.boxes .social .holder div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #ececec;
+  border: 1px solid #ccc;
+}
+.boxes .social .holder div i {
+  padding: 10px;
+  width: 34px;
+  color: #777;
+  text-align: center;
+  border-right: 1px solid #ccc;
+}
+.boxes .social .holder div p {
+  margin: 10px 0;
+}
+.boxes .widget .checkbox {
+  display: flex;
+  gap: 10px;
+  margin: 15px 0;
+  font-size: 14px;
+}
+.boxes .manager .date {
+  display: flex;
+  gap: 5px;
+  margin: 15px 0 5px;
+  font-size: 14px;
+}
+.boxes .manager .top {
+  margin-top: 20px;
+}
+.boxes .manager .icon {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  padding-top: 15px;
+  margin: 12px 0 -12px;
+  border-top: 1px solid #ccc;
+}
+@media (max-width: 767px) {
+  .boxes .manager .icon {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+.boxes .manager .icon input {
+  display: none;
+}
+.boxes .manager .icon label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 12px 15px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.boxes .manager .icon input:checked+label {
+  color: #0578d5;
+  border-color: #0578d5;
+}

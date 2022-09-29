@@ -1,0 +1,109 @@
+.plans {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+  margin: 0 15px 15px;
+}
+@media (max-width: 767px) {
+  .plans {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+.plans .plan {
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+}
+.plans .plan .head {
+  position: relative;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+.plans .plan .head::after {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  padding: 5px;
+  width: calc(100% - 5px);
+  height: calc(100% - 5px);
+  background-color: transparent;
+}
+.plans .plan .head .name {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 10px 0;
+}
+.plans .plan .head .price {
+  position: relative;
+  font-size: 30px;
+  margin: 0 0 10px;
+}
+.plans .plan .head .price::before {
+  content: '$';
+  position: absolute;
+  top: 3px;
+  left: -15px;
+  font-size: 18px;
+}
+.plans .plan .details {
+  margin: 15px 0 0;
+}
+.plans .plan .details .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ececee;
+}
+.plans .plan .details .info .exclamation{
+  color: #777;
+}
+.plans .plan .details .info .text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.plans .plan button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px 8px;
+  margin: 15px 0 0;
+  border-radius: 5px;
+}
+.plans .plan .details .info .text .check {
+  color: #22c55e;
+}
+.plans .plan .details .info .text .xmark {
+  color: red;
+}
+.plans .free .head {
+  background-color: #22c55e;
+}
+.plans .free .head::after {
+  border: 3px solid #22c55e;
+}
+.plans .free button {
+  background-color: #22c55e;
+}
+.plans .basic .head {
+  background-color: #0075ff;
+}
+.plans .basic .head::after {
+  border: 3px solid #0075ff;
+}
+.plans .basic button {
+  background-color: #0075ff;
+}
+.plans .premium .head {
+  background-color: #f59e0b;
+}
+.plans .premium .head::after {
+  border: 3px solid #f59e0b;
+}
+.plans .premium .message {
+  text-align: center;
+  color: #777;
+}

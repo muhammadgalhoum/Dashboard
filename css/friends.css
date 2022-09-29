@@ -1,0 +1,79 @@
+.friends {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 15px;
+}
+.friends .friend {
+  position: relative;
+  padding: 10px 10px 0;
+  border-radius: 5px;
+  background-color: white;
+}
+.friends .friend .icons {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.friends .friend .icons i {
+  font-size: 12px;
+  padding: 8px 20px 8px 8px;
+  background-color: #ececec;
+  border-radius: 50%;
+}
+.friends .friend .data {
+  text-align: center;
+  margin: 20px 0 12px;
+}
+.friends .friend .data .image img {
+  max-width: 100%;
+  width: 80px;
+  border-radius: 50%;
+}
+.friends .friend .data .name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px 0 8px;
+}
+.friends .friend .data .title {
+  margin: 0;
+  color: #777;
+  font-size: 12px;
+}
+.friends .friend .meta-data {
+  padding: 10px 0;
+  margin: 0 5px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+} 
+.friends .friend .meta-data div {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+} 
+.friends .friend .meta-data div p {
+  margin: 5px 0;
+}
+.friends .friend .date-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 10px;
+}
+.friends .friend .date-control .date {
+  color: var(--main-text-color, #777);
+}
+.friends .friend .date-control .control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px;
+}
+.friends .friend .date-control .control .profile,
+.friends .friend .date-control .control .remove {
+  padding: 4px 6px;
+  color: white;
+  border-radius: 5px;
+}

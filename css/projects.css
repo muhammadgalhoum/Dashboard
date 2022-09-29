@@ -1,0 +1,85 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 15px;
+  margin: 15px;
+}
+@media (max-width: 500px) {
+  .projects {
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  }
+}
+.projects .project {
+  position: relative;
+  padding: 15px 15px 0;
+  border-radius: 5px;
+  background-color: white;
+}
+.projects .project .date {
+  position: absolute;
+  top: -0;
+  right: 6px;
+  font-size: 11px;
+  color: #777;
+}
+.projects .project .name {
+  margin: 0;
+  font-size: 14px;
+}
+.projects .project .desc {
+  font-size: 11px;
+  color: #777;
+}
+.projects .project .images {
+  margin: 35px 0 15px;
+  display: flex;
+}
+.projects .project .images img:not(:first-of-type) {
+  margin-left: -15px;
+}
+.projects .project .images img:hover {
+  cursor: pointer;
+  z-index: 1;
+}
+.projects .project .skills {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 0;
+  border-top: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
+}
+@media (max-width:767px) {
+  .projects .project .skills {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+.projects .project .skills span {
+  padding: 4px 6px;
+  margin-right: 5px;
+  font-size: 13px;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+.projects .project .progress-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.projects .project .progress-price .progress {
+  width: 200px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+.projects .project .progress-price .progress span {
+  display: block;
+  height: inherit;
+  border-radius: inherit;
+}
+.projects .project .progress-price .price {
+  color: #777;
+  font-size: 13px;
+}

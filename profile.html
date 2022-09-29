@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Dashboard">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Galhoum">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- Profile CSS File -->
+    <link rel="stylesheet" href="css/profile.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet">
+  </head>
+<body>
+  <!-- Start Parent -->
+  <section class="parent">
+    <div class="side-nav">
+      <div class="title">
+        <p class="name">Elzero</p>
+        <p class="solid-circle"></p>
+      </div>
+      <ul>
+        <li><a href="index.html"><i class="fa-solid fa-chart-bar fa-fw"></i><span>Dashboard</span></a></li>
+        <li><a href="settings.html"><i class="fa-sharp fa-solid fa-gear fa-fw"></i><span>Settings</span></a></li>
+        <li class="active"><a href="profile.html"><i class="fa-regular fa-user fa-fw"></i><span>Profile</span></a></li>
+        <li><a href="projects.html"><i class="fa-solid fa-diagram-project fa-fw"></i><span>Projects</span></a></li>
+        <li><a href="courses.html"><i class="fa-solid fa-graduation-cap fa-fw"></i><span>Courses</span></a></li>
+        <li><a href="friends.html"><i class="fa-regular fa-circle-user fa-fw"></i><span>Friends</span></a></li>
+        <li><a href="files.html"><i class="fa-regular fa-file fa-fw"></i><span>Files</span></a></li>
+        <li><a href="plans.html"><i class="fa-regular fa-credit-card fa-fw"></i><span>Plans</span></a></li>
+      </ul>
+    </div>
+    <div class="content">
+      <div class="main-nav">
+      <form action="#" method="post">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="search" name="search" placeholder="Search Keyword">
+      </form>
+      <div class="user">
+        <i class="fa-regular fa-bell"></i>
+        <div class="user-image">
+          <a href="profile.html"><img src="images/user-img.webp" alt="user image"></a>
+        </div>
+      </div>
+      </div>
+      <div class="main-heading">
+        <h1>Profile</h1>
+        <hr/>
+      </div>
+      <div class="profile-data">
+        <div class="left">
+          <div class="image">
+            <img src="images/profile-img.webp" alt="Profile Image">
+          </div>
+          <h4>Osama Elzero</h4>
+          <p class="level">Level 19</p>
+          <div class="progress">
+            <span style="width:70%"></span>
+          </div>
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="rating">450 Rating</p>
+        </div>
+        <div class="right">
+          <div class="holder">
+            <p class="title">General Information</p>
+            <div class="info">
+              <p>Full Name: <span>Osama Mohamed</span></p>
+              <p>Gender: <span>Male</span></p>
+              <p>Country: <span>Egypt</span></p>
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="holder">
+            <p class="title">Personal Information</p>
+            <div class="info">
+              <p>Email: <span>o@nn.sa</span></p>
+              <p>Phone: <span>019123456789</span></p>
+              <p>Date Of Birth: <span>25/10/1982</span></p>
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="holder">
+            <p class="title">Job Information</p>
+            <div class="info">
+              <p>Title: <span>Full Stack Developer</span></p>
+              <p>Programming Language: <span>Python</span></p>
+              <p>Years Of Ecperience: <span>15+</span></p>
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+          <div class="holder">
+            <p class="title">Billing Information</p>
+            <div class="info">
+              <p>Payment Method: <span>Paypal</span></p>
+              <p>Email: <span>email@website.com</span></p>
+              <p>Subscription: <span>Monthly</span></p>
+              <label class="toggle">
+                <input class="toggle-checkbox" type="checkbox">
+                <div class="toggle-switch"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="skills-activaties">
+        <div class="skills">
+          <div class="title">
+            <h3>My Skills</h3>
+            <p>Complete Skills List</p>
+          </div>
+          <div class="skill">
+            <span>HTML</span>
+            <span>Pugjs</span>
+            <span>HAML</span>
+          </div>
+          <div class="skill">
+            <span>CSS</span>
+            <span>SASS</span>
+            <span>Styluys</span>
+          </div>
+          <div class="skill">
+            <span>JavaScript</span>
+            <span>TypeScript</span>
+          </div>
+          <div class="skill">
+            <span>Vuejs</span>
+            <span>Reactjs</span>
+          </div>
+          <div class="skill">
+            <span>Jest</span>
+            <span>Jasmine</span>
+          </div>
+          <div class="skill">
+            <span>PHP</span>
+            <span>Laravel</span>
+          </div>
+          <div class="skill">
+            <span>Pyrhon</span>
+            <span>Django</span>
+          </div>
+        </div>
+        <div class="activaties">
+          <div class="title">
+            <h3>Latest Activates</h3>
+            <p>Latest Activates Done By The User</p>
+          </div>
+          <div class="activaty">
+            <div class="text">
+              <i class="shop fa-sharp fa-solid fa-shop fa-flip-horizontal"></i>
+              <div class="data">
+                <p class="title">Store</p>
+                <p class="desc">Bought The Mastering Python Course</p>
+              </div>
+            </div>
+            <div class="date-time">
+              <p class="time">18:10</p>
+              <p class="date">Yesterday</p>
+            </div>
+          </div>
+          <div class="activaty">
+            <div class="text">
+              <i class="grad fa-sharp fa-solid fa-graduation-cap"></i>
+              <div class="data">
+                <p class="title">Academy</p>
+                <p class="desc">Got the PHP Certificate</p>
+              </div>
+            </div>
+            <div class="date-time">
+              <p class="time">6:05</p>
+              <p class="date">Yesterday</p>
+            </div>
+          </div>
+          <div class="activaty">
+            <div class="text">
+              <i class=" award fa-solid fa-award"></i>
+              <div class="data">
+                <p class="title">Badges</p>
+                <p class="desc">Unlock The 10 Skills Badge</p>
+              </div>
+            </div>
+            <div class="date-time">
+              <p class="time">18:05</p>
+              <p class="date">Yesterday</p>
+            </div>
+          </div>
+          <div class="activaty">
+            <div class="text">
+              <i class="shop fa-sharp fa-solid fa-shop fa-flip-horizontal"></i>
+              <div class="data">
+                <p class="title">Store</p>
+                <p class="desc">Bought The Typescript Course</p>
+              </div>
+            </div>
+            <div class="date-time">
+              <p class="time">12:05</p>
+              <p class="date">Yesterday</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- End Parent -->
+</body>
+</html>

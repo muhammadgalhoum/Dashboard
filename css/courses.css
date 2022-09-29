@@ -1,0 +1,75 @@
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  margin: 15px;
+}
+@media (min-width: 500px) and (max-width: 610px) {
+  .courses {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+.courses .course {
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+}
+.courses .course .teacher-img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+.courses .course .teacher-img img {
+  max-width: 100%;
+  border-radius: inherit;
+}
+.courses .course .bg-image {
+  border-radius: inherit;
+}
+.courses .course .bg-image img {
+  max-width: 100%;
+  border-radius: inherit;
+}
+.courses .course .info {
+  position: relative;
+  padding: 0 15px;
+  border-bottom: 1px solid #ccc;
+}
+.courses .course .info .title {
+  color: black;
+  font-weight: bold;
+  font-size: 11px;
+  margin: 11px 0 8px;
+}
+.courses .course .info p {
+  font-size: 10px;
+  margin: 0 0 30px;
+  color: var(--main-text-color, #777);
+  line-height: var(--main-line-height, 1.6);
+}
+.courses .course .info a {
+  position: absolute;
+  bottom: 0;
+  transform:translateY(50%);
+  left: calc((100% - 85px) / 2);
+  color: white;
+  font-size: 13px;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #0578d5;
+}
+.courses .course .student-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  padding: 0 12px 5px;
+  color: var(--main-text-color, #777);
+}
+.courses .course .student-price .price span {
+  font-size: 13px;
+}
