@@ -1058,6 +1058,7 @@ ul {
 }
 .parent .content .last-card table {
   width: 100%;
+  min-width: 784px;
   font-size: 13px;
   margin-top: 20px;
   border-spacing: 0;
